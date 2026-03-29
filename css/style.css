@@ -1,0 +1,256 @@
+/* GENERAL PAGE STYLE */
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:linear-gradient(135deg,#7f5af0,#2cb67d,#ffd803);
+background-size:400% 400%;
+animation:gradientMove 10s infinite alternate;
+color:#222;
+}
+
+/* Animated background */
+
+@keyframes gradientMove{
+0%{background-position:left;}
+100%{background-position:right;}
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:25px;
+background:rgba(0,0,0,0.3);
+color:white;
+}
+
+/* NAVIGATION BAR */
+
+nav ul{
+list-style:none;
+padding:0;
+margin:10px 0;
+}
+
+nav ul li{
+display:inline;
+margin:0 15px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+font-size:18px;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#ffd803;
+}
+
+/* INTRO SECTION */
+
+.intro{
+text-align:center;
+padding:40px;
+}
+
+/* CENTER ALL IMAGES */
+
+img{
+display:block;
+margin-left:auto;
+margin-right:auto;
+max-width:100%;
+border-radius:10px;
+margin-top:15px;
+margin-bottom:15px;
+}
+
+/* BLOG PREVIEW CARDS */
+
+.blog-preview{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+width:250px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+/* BLOG PAGE CONTAINER */
+
+.blog-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:40px;
+}
+
+/* BLOG POSTS */
+
+.blog-card{
+background:white;
+padding:25px;
+width:300px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+text-align:center;
+transition:0.3s;
+}
+
+.blog-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 35px rgba(0,0,0,0.25);
+}
+
+/* BLOG TITLE */
+
+.blog-card h2{
+color:#7f5af0;
+}
+
+/* AUTHOR META */
+
+.meta{
+font-size:13px;
+color:#666;
+margin-bottom:10px;
+}
+
+/* ABOUT PAGE */
+
+.about{
+text-align:center;
+padding:40px;
+}
+
+/* CONTACT PAGE */
+
+.contact{
+text-align:center;
+padding:40px;
+}
+
+/* CONTACT IMAGE */
+
+.contact img{
+width:250px;
+margin-bottom:20px;
+}
+
+/* CONTACT FORM */
+
+.contact form{
+display:flex;
+flex-direction:column;
+gap:12px;
+width:100%;
+max-width:400px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* LABELS */
+
+.contact label{
+font-weight:bold;
+text-align:left;
+}
+
+/* INPUT FIELDS */
+
+.contact input,
+.contact textarea{
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+box-sizing:border-box;
+}
+
+/* INPUT FOCUS EFFECT */
+
+.contact input:focus,
+.contact textarea:focus{
+border:2px solid #7f5af0;
+outline:none;
+}
+
+/* TEXTAREA */
+
+.contact textarea{
+height:120px;
+resize:none;
+}
+
+/* BUTTON */
+
+.contact button{
+background:#7f5af0;
+color:white;
+padding:12px;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact button:hover{
+background:#2cb67d;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,0.3);
+color:white;
+margin-top:40px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:768px){
+
+.blog-preview{
+flex-direction:column;
+align-items:center;
+}
+
+.blog-container{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
+width:90%;
+}
+
+.blog-card{
+width:90%;
+}
+
+}
